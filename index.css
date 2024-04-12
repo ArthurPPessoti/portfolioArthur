@@ -1,0 +1,307 @@
+/* é o geral do site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.geral {
+    display: flex;
+}
+
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: orangered;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover, form .enviar input:hover{
+    box-shadow: 0px 0px 8px orangered;
+}
+
+h2.titulo {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+/* estilo do cabeçario, o header */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(131, 67, 21);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: chocolate;
+    transform: scale(1.5);
+
+}
+
+/* colocar cor nas palavras do cabeçario */
+
+header nav ul {
+    list-style-type: none;
+    /* para tirar as bolinhas que tem na lista */
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilo do inicio do site, é o main */
+section.inicio-do-site {
+    padding: 40px 4%;
+}
+
+section.inicio-do-site .geral {
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.inicio-do-site h1 {
+    color: aliceblue;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.inicio-do-site .txt-inicio-site h1 span {
+    color: orangered;
+    font-size: 50px;
+}
+
+.inicio-do-site .txt-inicio-site p {
+    color: aliceblue;
+    margin: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilo da parte de habilidades */
+
+section.habilidades {
+    padding: 40px 4%;
+}
+
+section.habilidades .geral {
+    gap: 50px;
+}
+
+.habilidades .skills-quadro {
+    color: aliceblue;
+    padding: 40px;
+    margin-top: 25px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.habilidades .skills-quadro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px orangered;
+
+}
+
+.habilidades .skills-quadro i {
+    font-size: 75px;
+    color: orangered;
+}
+
+.habilidades .skills-quadro h3 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estuilo da sessão sobre */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .geral {
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre .txt-sobre {
+    color: aliceblue;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: orangered;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .rede-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: orangered;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilo do formulario de contato */
+
+section.form{
+padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #413f3f;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 18px;
+
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: chocolate;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .enviar input{
+    width: 150px;
+    background-color: orangered;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
