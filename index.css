@@ -30,7 +30,8 @@ body {
     cursor: pointer;
 }
 
-button:hover, form .enviar input:hover{
+button:hover,
+form .enviar input:hover {
     box-shadow: 0px 0px 8px orangered;
 }
 
@@ -248,11 +249,11 @@ section.sobre .geral {
 
 /* estilo do formulario de contato */
 
-section.form{
-padding: 80px 4%;
+section.form {
+    padding: 80px 4%;
 }
 
-form{
+form {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -262,7 +263,8 @@ form{
     margin-top: 40px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     background-color: #413f3f;
     border: 0;
@@ -274,22 +276,23 @@ form input, form textarea{
 
 }
 
-form input::placeholder, form textarea::placeholder{
+form input::placeholder,
+form textarea::placeholder {
     color: chocolate;
 }
 
-form textarea{
+form textarea {
     resize: none;
     max-height: 200px;
 }
 
-form .enviar{
+form .enviar {
     margin-top: 20px;
     text-align: center;
 
 }
 
-form .enviar input{
+form .enviar input {
     width: 150px;
     background-color: orangered;
     color: black;
@@ -305,3 +308,88 @@ form .enviar input{
 
 
 
+
+
+
+
+
+/* converter tamanho */
+
+@media screen and (max-width: 1020px) {
+    * {
+        text-align: center;
+    }
+
+    /* classe geral */
+    .inicio-do-site .geral {
+        flex-direction: column;
+    }
+
+
+
+
+    /* cabeçalho */
+    .menu,
+    .contato {
+        display: none;
+    }
+
+    /* inicio */
+
+    section.inicio-do-site {
+        padding: 20px 8%;
+    }
+
+    .inicio-do-site h1 {
+        font-size: 35px;
+    }
+
+
+    /* habilidades */
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    .habilidades .geral {
+        flex-direction: column;
+    }
+
+    /* sobre */
+
+    section.sobre {
+        padding: 20px 8%;
+    }
+
+    .sobre .geral {
+        flex-direction: column-reverse;
+
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .rede-social {
+        text-align: center;
+    }
+
+
+
+
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
